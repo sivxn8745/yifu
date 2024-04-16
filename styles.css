@@ -1,0 +1,38 @@
+.container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+  }
+  
+  .box {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    animation: moveBox 5s infinite alternate; /* Animación llamada 'moveBox' que dura 5 segundos y se repite infinitamente */
+  }
+  
+  @keyframes moveBox {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    25% {
+      top: 0;
+      left: 250px;
+    }
+    50% {
+      top: 250px;
+      left: 250px;
+    }
+    75% {
+      top: 250px;
+      left: 0;
+    }
+    100% {
+      top: 0;
+      left: 0;
+    }
+  }
+  
